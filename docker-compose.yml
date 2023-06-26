@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  spotdl:
+    build: .
+    volumes:
+      - ${MUSIC_FOLDER}:/music
+    environment:
+      - SPOTIFY_PLAYLIST_URL=${SPOTIFY_PLAYLIST_URL}
